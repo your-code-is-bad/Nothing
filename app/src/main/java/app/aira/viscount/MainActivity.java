@@ -53,10 +53,10 @@ public class MainActivity extends Activity {
             try {
                 var result = BlackBoxCore.get().installPackageAsUser(packageName, USER_ID);
                 mainHandler.post(() -> {
-                    if (result != null && result.isSuccess()) {
+                    if (result != null && result.success) {
                         log("Install SUCCESS: " + packageName);
                     } else {
-                        log("Install FAILED: " + packageName + (result != null ? " - " + result.getMessage() : ""));
+                        log("Install FAILED: " + packageName + (result != null ? " - " + result.msg : ""));
                     }
                 });
             } catch (Exception e) {
@@ -80,10 +80,10 @@ public class MainActivity extends Activity {
             try {
                 var result = BlackBoxCore.get().installPackageAsUser(apkFile, USER_ID);
                 mainHandler.post(() -> {
-                    if (result != null && result.isSuccess()) {
+                    if (result != null && result.success) {
                         log("Install SUCCESS: " + apkFile.getName());
                     } else {
-                        log("Install FAILED: " + apkFile.getName() + (result != null ? " - " + result.getMessage() : ""));
+                        log("Install FAILED: " + apkFile.getName() + (result != null ? " - " + result.msg : ""));
                     }
                 });
             } catch (Exception e) {
