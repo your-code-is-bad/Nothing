@@ -42,8 +42,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void inialised() {
-        Thread.sleep(10000); // Wait for 10 seconds before starting the installation and loading apps
-     
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+           Thread.currentThread().interrupt();
+           return;
+        }	 
         start();
         loadInstalledApps();
         
