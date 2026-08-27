@@ -6,6 +6,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
 
 
 

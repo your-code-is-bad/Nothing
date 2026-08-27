@@ -25,7 +25,7 @@ import java.util.Locale;
 import top.niunaijun.blackbox.BlackBoxCore;
 import top.niunaijun.blackbox.fake.frameworks.BPackageManager;
 
-public class MainActivity extends Activity {
+public class Legacy extends Activity {
 
     private static final int USER_ID = 0;
 
