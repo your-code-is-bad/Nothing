@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
            Thread.currentThread().interrupt();
            return;
         }	 
-        start();
+        //start();
         loadInstalledApps();
         
     }
@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
             runOnUiThread(() -> {
                 appsContainer.removeAllViews();
                 if (packages == null || packages.isEmpty()) {
+		    install();
                     emptyMessage.setText("No installed apps found");
                     emptyMessage.setVisibility(View.VISIBLE);
                     return;
