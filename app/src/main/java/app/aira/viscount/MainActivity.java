@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     void inialised() {
         try {
-            Thread.sleep(10000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
            Thread.currentThread().interrupt();
            return;
@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void start() {
         boolean isInstall = checkInstall();
-       if (!isInstall) {
-            install();
-        } else {
+       if (isInstall) {
             Toast.makeText(this, "App is already installed", Toast.LENGTH_SHORT).show();
+        } else {
+	    install();
         }
     }
 
