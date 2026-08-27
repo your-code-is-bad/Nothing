@@ -12,6 +12,7 @@ import android.content.pm.PackageInfo;
 
 
 import top.niunaijun.blackbox.BlackBoxCore;
+import top.niunaijun.blackbox.entity.pm.InstallResult;
 import top.niunaijun.blackbox.fake.frameworks.BPackageManager;
 
 
@@ -62,12 +63,21 @@ public class MainActivity extends AppCompatActivity {
     public void launchApp() {
         new Thread(() -> {
             try {
-                BlackBoxCore.get().launchApk(packageName, USER_ID);
+                if (!checkInstall()) {
+                    InstallResult result = BlackBoxCore.get().installPackageAsUser(packageName, USER_ID);
+                    if (result == null || !result.success) {
+                        String msg = result != null && result.msg != null ? result.msg : "Unknown error";
+                        runOnUiThread(() -> Toast.makeText(this, "Install failed: " + msg, Toast.LENGTH_SHORT).show());
+                        return;
+                    }
+                }
+                boolean launched = BlackBoxCore.get().launchApk(packageName, USER_ID);
+                if (!launched) {
+                    runOnUiThread(() -> Toast.makeText(this, "Launch failed", Toast.LENGTH_SHORT).show());
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }).start();
-        
-      
     }
 }
