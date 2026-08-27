@@ -47,12 +47,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void install() {
-        var result = BlackBoxCore.get().installPackageAsUser(packageName, USER_ID);
-        if (result.success) {
-            Toast.makeText(this, "Installation successful", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "Installation failed", Toast.LENGTH_SHORT).show();
-        }
+        new Thread(() -> {
+            try {
+                var result = BlackBoxCore.get().installPackageAsUser(packageName, USER_ID);
+                
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
+        
+        
     }
 
     public void launchApp() {
