@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     public void launchApp() {
         new Thread(() -> {
             try {
-                BlackBoxCore.get().launchPackage(packageName, USER_ID);
+                BlackBoxCore.get().launchApk(packageName, USER_ID);
             } catch (Exception e) {
                 e.printStackTrace();
             }
