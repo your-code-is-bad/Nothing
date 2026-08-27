@@ -40,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean checkInstall() {
-        boolean isInstall = BlackBoxCore.get().getPackageManager().isInstalled(USER_ID, packageName);
+        boolean isInstall = pm.isInstalled(packageName, USER_ID);
         return isInstall;
     }
 
     public void install() {
-        var result = BlackBoxCore.get().installPackage(USER_ID, packageName);
+        var result = BlackBoxCore.get().installPackageAsUser(packageName, USER_ID);
         if (result.isSuccess()) {
             Toast.makeText(this, "Installation successful", Toast.LENGTH_SHORT).show();
         } else {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     public void launchApp() {
         boolean isInstall = checkInstall();
         if (isInstall) {
-            BlackBoxCore.get().launchApk(USER_ID, packageName);
+            BlackBoxCore.get().launchApk(packageName, USER_ID);
         }
     }
 }
