@@ -56,9 +56,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void launchApp() {
-        boolean isInstall = checkInstall();
-        if (isInstall) {
-            BlackBoxCore.get().launchApk(packageName, USER_ID);
-        }
+        new Thread(() -> {
+            try {
+                BlackBoxCore.get().launchPackage(packageName, USER_ID);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
+        
+      
     }
 }
