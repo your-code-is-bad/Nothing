@@ -42,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean checkInstall() {
-        boolean isInstall = pm.isInstalled(packageName, USER_ID);
+        boolean isInstall = BlackBoxCore.getBPackageManager().isInstalled(packageName, USER_ID);
         return isInstall;
     }
 
     public void install() {
         var result = BlackBoxCore.get().installPackageAsUser(packageName, USER_ID);
-        if (result.isSuccess()) {
+        if (result.success) {
             Toast.makeText(this, "Installation successful", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Installation failed", Toast.LENGTH_SHORT).show();
