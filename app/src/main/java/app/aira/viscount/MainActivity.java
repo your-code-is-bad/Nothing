@@ -34,34 +34,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); 
-        btnLaunch = findViewById(R.id.btn_launch);
-        btnLaunch.setOnClickListener(v -> launchApp());
+        
         appsContainer = findViewById(R.id.apps_container);
         emptyMessage = findViewById(R.id.tv_empty);
-        inialised();
-    }
-
-    void inialised() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-           Thread.currentThread().interrupt();
-           return;
-        }	 
-        //start();
         loadInstalledApps();
-        
     }
 
-    public void start() {
-        boolean isInstall = checkInstall();
-       if (isInstall) {
-            Toast.makeText(this, "App is already installed", Toast.LENGTH_SHORT).show();
-        } else {
-	    install();
-        }
-    }
-
+  
     public boolean checkInstall() {
         boolean isInstall = BlackBoxCore.getBPackageManager().isInstalled(packageName, USER_ID);
         return isInstall;
@@ -80,15 +59,13 @@ public class MainActivity extends AppCompatActivity {
         
     }
 
-    public void launchApp() {
-        launchApp(packageName);
-    }
+   
 
-    private void launchApp(String packageName) {
+    private void launchApp(String appName) {
         new Thread(() -> {
             try {
                 
-                boolean launched = BlackBoxCore.get().launchApk(packageName, USER_ID);
+                boolean launched = BlackBoxCore.get().launchApk(appName, USER_ID);
                 if (!launched) {
                     runOnUiThread(() -> Toast.makeText(this, "Launch failed", Toast.LENGTH_SHORT).show());
                 }
