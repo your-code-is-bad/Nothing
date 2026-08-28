@@ -9,16 +9,11 @@
         android:id="@+id/tv_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BlackBox Loader"
+        android:text="Viscount Loader"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="8dp" />
 
-    <Button
-        android:id="@+id/btn_launch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Launch App" />
 
     <TextView
         android:id="@+id/tv_empty"
