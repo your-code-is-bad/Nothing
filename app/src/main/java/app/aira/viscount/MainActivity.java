@@ -1,6 +1,7 @@
 package app.aira.viscount;
 
 import android.os.Bundle;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
+import java.io.File;
 import java.util.List;
 
 
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         
         appsContainer = findViewById(R.id.apps_container);
         emptyMessage = findViewById(R.id.tv_empty);
+        Button btnGetApp = findViewById(R.id.btn_get_app);
+        btnGetApp.setOnClickListener(v -> startActivity(new Intent(this, GetApp.class)));
         start();
     }
 
@@ -56,6 +60,16 @@ public class MainActivity extends AppCompatActivity {
         }).start();
         
         
+    }
+
+    public void install(File apkFile) {
+        new Thread(() -> {
+            try {
+                BlackBoxCore.get().installPackageAsUser(apkFile, USER_ID);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 
    
