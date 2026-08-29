@@ -34,9 +34,22 @@
             android:maxLines="1" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_launch_app"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Launch" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_launch_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch" />
+
+        <Button
+            android:id="@+id/btn_uninstall_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Uninstall" />
+    </LinearLayout>
 </LinearLayout>

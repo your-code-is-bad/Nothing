@@ -84,6 +84,20 @@ public class MainActivity extends AppCompatActivity {
 
    
 
+    public void uninstall(String appPackageName) {
+        new Thread(() -> {
+            try {
+                BlackBoxCore.get().uninstallPackageAsUser(appPackageName, USER_ID);
+                runOnUiThread(() -> {
+                    Toast.makeText(this, "Uninstalled", Toast.LENGTH_SHORT).show();
+                    loadInstalledApps();
+                });
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
+    }
+
     public void launchApp(String appPackageName) {
         new Thread(() -> {
             try {
@@ -128,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
         TextView packageText = row.findViewById(R.id.app_package);
         ImageView icon = row.findViewById(R.id.app_icon);
         Button launch = row.findViewById(R.id.btn_launch_app);
+        Button uninstall = row.findViewById(R.id.btn_uninstall_app);
 
         String label = packageInfo.packageName;
         Drawable appIcon = null;
@@ -147,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
         }
         String appPackageName = packageInfo.packageName;
         launch.setOnClickListener(v -> launchApp(appPackageName));
+        uninstall.setOnClickListener(v -> uninstall(appPackageName));
         appsContainer.addView(row);
     }
 }
