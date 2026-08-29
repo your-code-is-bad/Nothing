@@ -46,6 +46,12 @@ public class GmsProxy extends BinderInvocationStub {
 
     @Override
     protected void inject(Object baseInvocation, Object proxyInvocation) {
+        
+        IBinder binder = BRServiceManager.get().getService("gms");
+        if (binder == null) {
+            Slog.w(TAG, "GmsProxy: No system gms service on this device; skipping injection.");
+            return;
+        }
         replaceSystemService("gms");
     }
 

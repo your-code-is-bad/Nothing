@@ -244,10 +244,6 @@ public class PackageManagerCompat {
         if (!ArrayUtils.contains(MICROG_SIGNATURE_PACKAGES, packageName)) {
             return null;
         }
-        
-        if (base != null && base.signatures != null && base.signatures.length > 0) {
-            return null;
-        }
         try {
             Signature fake = new Signature(GOOGLE_SIGNATURE_HEX);
             return new Signature[]{fake};
