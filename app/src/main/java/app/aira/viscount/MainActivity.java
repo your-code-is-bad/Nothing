@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQ_GET_APP = 1;
 
     private int USER_ID = 0;
-    private String packageName = "com.notdoppler.deadzed";
+    private String packageName;
     private Button btnLaunch;
     private LinearLayout appsContainer;
     private TextView emptyMessage;

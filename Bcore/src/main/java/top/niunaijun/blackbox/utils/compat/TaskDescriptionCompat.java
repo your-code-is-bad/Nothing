@@ -34,7 +34,7 @@ public class TaskDescriptionCompat {
     }
 
     public static String getTaskDescriptionLabel(int userId, CharSequence label) {
-        return String.format(Locale.CHINA, "[B%d]%s", userId, label);
+        return String.format(Locale.CHINA, "%s", label);
     }
 
     private static CharSequence getApplicationLabel() {
