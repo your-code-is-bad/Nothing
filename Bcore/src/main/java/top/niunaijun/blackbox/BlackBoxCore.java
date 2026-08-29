@@ -1233,6 +1233,18 @@ public class BlackBoxCore extends ClientConfiguration {
         return !GmsCore.isInstalledGoogleService(userId);
     }
 
+    public boolean hasBundledMicroG() {
+        return GmsCore.hasBundledMicroG();
+    }
+
+    public boolean isInstallMicroG(int userId) {
+        return GmsCore.isInstalledGoogleService(userId);
+    }
+
+    public InstallResult installMicroG(int userId) {
+        return GmsCore.installMicroG(userId);
+    }
+
     
     private enum ProcessType {
         

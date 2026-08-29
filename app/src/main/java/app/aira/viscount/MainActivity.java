@@ -43,7 +43,29 @@ public class MainActivity extends AppCompatActivity {
         emptyMessage = findViewById(R.id.tv_empty);
         Button btnGetApp = findViewById(R.id.btn_get_app);
         btnGetApp.setOnClickListener(v -> startActivityForResult(new Intent(this, GetApp.class), REQ_GET_APP));
+        Button btnInstallMicroG = findViewById(R.id.btn_install_microg);
+        btnInstallMicroG.setOnClickListener(v -> installMicroG());
         start();
+    }
+
+    public void installMicroG() {
+        new Thread(() -> {
+            try {
+                InstallResult result = BlackBoxCore.get().installMicroG(USER_ID);
+                runOnUiThread(() -> {
+                    if (result != null && result.success) {
+                        Toast.makeText(this, "microG installed", Toast.LENGTH_LONG).show();
+                        loadInstalledApps();
+                    } else {
+                        String msg = result != null && result.msg != null ? result.msg : "unknown error";
+                        Toast.makeText(this, "microG install failed: " + msg, Toast.LENGTH_LONG).show();
+                    }
+                });
+            } catch (Exception e) {
+                e.printStackTrace();
+                runOnUiThread(() -> Toast.makeText(this, "microG install error", Toast.LENGTH_LONG).show());
+            }
+        }).start();
     }
 
     @Override

@@ -87,10 +87,18 @@ public class GoogleAccountManagerProxy extends ClassInvocationStub {
                     Slog.d(TAG, "GoogleAccountManager: Requesting accounts of type: " + accountType);
                     
                     
+                    Object result = method.invoke(who, args);
+                    if (result instanceof Account[] && ((Account[]) result).length > 0) {
+                        Slog.d(TAG, "GoogleAccountManager: Returning real accounts of type " + accountType);
+                        return result;
+                    }
+                    
+                    
                     if ("com.google".equals(accountType)) {
                         Slog.d(TAG, "GoogleAccountManager: Returning mock Google accounts");
                         return createMockGoogleAccounts();
                     }
+                    return result;
                 }
                 
                 

@@ -1,12 +1,17 @@
 package top.niunaijun.blackbox.core;
 
+import android.content.Context;
 import android.content.pm.PackageManager;
 
+import java.io.File;
+import java.io.InputStream;
 import java.util.HashSet;
 import java.util.Set;
 
 import top.niunaijun.blackbox.BlackBoxCore;
+import top.niunaijun.blackbox.core.env.BEnvironment;
 import top.niunaijun.blackbox.entity.pm.InstallResult;
+import top.niunaijun.blackbox.utils.FileUtils;
 
 
 public class GmsCore {
@@ -17,6 +22,9 @@ public class GmsCore {
     public static final String GMS_PKG = "com.google.android.gms";
     public static final String GSF_PKG = "com.google.android.gsf";
     public static final String VENDING_PKG = "com.android.vending";
+
+    
+    public static final String MICROG_ASSET_DIR = "microg";
 
     static {
         GOOGLE_APP.add(VENDING_PKG);
@@ -98,6 +106,58 @@ public class GmsCore {
         GOOGLE_APP.remove(packageName);
     }
 
+    
+    public static boolean hasBundledMicroG() {
+        try {
+            String[] files = BlackBoxCore.getContext().getAssets().list(MICROG_ASSET_DIR);
+            return files != null && files.length > 0;
+        } catch (Throwable e) {
+            return false;
+        }
+    }
+
+    
+    private static File copyAssetApk(String assetName) {
+        Context context = BlackBoxCore.getContext();
+        try {
+            InputStream is = context.getAssets().open(MICROG_ASSET_DIR + "/" + assetName);
+            File target = new File(BEnvironment.getCacheDir(), "microg_" + assetName);
+            FileUtils.copyFile(is, target);
+            return target;
+        } catch (Throwable e) {
+            
+        }
+        return null;
+    }
+
+    
+    public static InstallResult installMicroG(int userId) {
+        InstallResult failed = new InstallResult();
+        Context context = BlackBoxCore.getContext();
+        try {
+            String[] assets = context.getAssets().list(MICROG_ASSET_DIR);
+            if (assets == null || assets.length == 0) {
+                return failed.installError("microg", "No bundled microG APKs found in assets/" + MICROG_ASSET_DIR);
+            }
+
+            for (String assetName : assets) {
+                if (!assetName.endsWith(".apk")) {
+                    continue;
+                }
+                File apk = copyAssetApk(assetName);
+                if (apk == null || !apk.exists()) {
+                    continue;
+                }
+                InstallResult result = BlackBoxCore.get().installPackageAsUser(apk, userId);
+                if (!result.success) {
+                    return result;
+                }
+            }
+            return new InstallResult();
+        } catch (Throwable e) {
+            return failed.installError("microg", "Failed to install microG: " + e.getMessage());
+        }
+    }
 
     public static boolean isSupportGms() {
         try {
@@ -105,7 +165,7 @@ public class GmsCore {
             return true;
         } catch (PackageManager.NameNotFoundException ignored) {
         }
-        return false;
+        return hasBundledMicroG();
     }
 
     public static boolean isInstalledGoogleService(int userId) {

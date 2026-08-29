@@ -5,6 +5,7 @@ import android.content.Context;
 
 import top.niunaijun.blackbox.BlackBoxCore;
 import top.niunaijun.blackbox.app.configuration.ClientConfiguration;
+import top.niunaijun.blackbox.app.configuration.AppLifecycleCallback;
 
 public class App extends Application {
     @Override
@@ -26,5 +27,18 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         BlackBoxCore.get().doCreate();
+        BlackBoxCore.get().addAppLifecycleCallback(new AppLifecycleCallback() {
+            public void beforeCreateApplication() {
+
+            }
+
+            public void beforeApplicationOnCreate() {
+
+            }
+
+            public void afterApplicationOnCreate() {
+
+            }
+        });
     }
 }
