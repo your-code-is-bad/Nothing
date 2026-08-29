@@ -25,6 +25,8 @@ import top.niunaijun.blackbox.fake.frameworks.BPackageManager;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final int REQ_GET_APP = 1;
+
     private int USER_ID = 0;
     private String packageName = "com.notdoppler.deadzed";
     private Button btnLaunch;
@@ -40,8 +42,16 @@ public class MainActivity extends AppCompatActivity {
         appsContainer = findViewById(R.id.apps_container);
         emptyMessage = findViewById(R.id.tv_empty);
         Button btnGetApp = findViewById(R.id.btn_get_app);
-        btnGetApp.setOnClickListener(v -> startActivity(new Intent(this, GetApp.class)));
+        btnGetApp.setOnClickListener(v -> startActivityForResult(new Intent(this, GetApp.class), REQ_GET_APP));
         start();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQ_GET_APP && resultCode == RESULT_OK) {
+            loadInstalledApps();
+        }
     }
 
     void start() {
