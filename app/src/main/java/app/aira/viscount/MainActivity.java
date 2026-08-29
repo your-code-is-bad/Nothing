@@ -37,19 +37,18 @@ public class MainActivity extends AppCompatActivity {
         
         appsContainer = findViewById(R.id.apps_container);
         emptyMessage = findViewById(R.id.tv_empty);
+        start();
+    }
+
+    void start() {
         loadInstalledApps();
     }
 
-  
-    public boolean checkInstall() {
-        boolean isInstall = BlackBoxCore.getBPackageManager().isInstalled(packageName, USER_ID);
-        return isInstall;
-    }
 
-    public void install() {
+    public void install(String appPackageName) {
         new Thread(() -> {
             try {
-                var result = BlackBoxCore.get().installPackageAsUser(packageName, USER_ID);
+                var result = BlackBoxCore.get().installPackageAsUser(appPackageName, USER_ID);
                 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -61,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
 
    
 
-    private void launchApp(String appName) {
+    public void launchApp(String appPackageName) {
         new Thread(() -> {
             try {
                 
-                boolean launched = BlackBoxCore.get().launchApk(appName, USER_ID);
+                boolean launched = BlackBoxCore.get().launchApk(appPackageName, USER_ID);
                 if (!launched) {
                     runOnUiThread(() -> Toast.makeText(this, "Launch failed", Toast.LENGTH_SHORT).show());
                 }
@@ -81,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
             runOnUiThread(() -> {
                 appsContainer.removeAllViews();
                 if (packages == null || packages.isEmpty()) {
-		    install();
                     emptyMessage.setText("No installed apps found");
                     emptyMessage.setVisibility(View.VISIBLE);
                     return;
