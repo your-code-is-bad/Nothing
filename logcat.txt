@@ -1,0 +1,498 @@
+--------- beginning of main
+[39m08-30 07:54:48.997 20170 20170 V zygisk-core64: pre specialize [app.aira.viscount][0m
+[34m08-30 07:54:48.998 20170 20170 D zygisk-core64: set mount namespace to [/proc/924/fd/11] fd=[6]: clean[0m
+[34m08-30 07:54:48.998 20170 20170 D zygisk-core64: Registering module with API version 2[0m
+[31m08-30 07:54:49.000 20170 20170 E Zygote  : process_name_ptr:20170 app.aira.viscount[0m
+[31m08-30 07:54:49.000 20170 20170 E Zygote  : SetMemoryProtected process_name_ptr:20170 app.aira.viscount[0m
+[32m08-30 07:54:49.001 20170 20170 I libc    : SetHeapTaggingLevel: tag level set to 0[0m
+[32m08-30 07:54:49.005 20170 20170 I p.aira.viscount: Using generational CollectorTypeCMC GC.[0m
+[39m08-30 07:54:49.008 20170 20170 V zygisk-core64: post specialize [app.aira.viscount][0m
+[34m08-30 07:54:49.008 20170 20170 D CSOLoader: Calling .fini_array destructors for /data/adb/modules/playintegrityfix/zygisk/arm64-v8a.so[0m
+[34m08-30 07:54:49.008 20170 20170 D CSOLoader: Calling fini_array[1] at 0x7ed0a01748[0m
+[34m08-30 07:54:49.008 20170 20170 D CSOLoader: Calling fini_array[0] at 0x7ed0a01760[0m
+[34m08-30 07:54:49.008 20170 20170 D CSOLoader: Unregistered custom library for backtrace support[0m
+[34m08-30 07:54:49.008 20170 20170 D zygisk-core64: Modules unloaded: 1/1[0m
+[39m08-30 07:54:49.009 20170 20170 V zygisk-core64: Call pthread_attr_setstacksize in [tid, pid]: 20170, 20170[0m
+[34m08-30 07:54:49.009 20170 20170 D zygisk-core64: Unregistered plt_hook for symbol "fork" in library "libandroid_runtime.so"[0m
+[34m08-30 07:54:49.009 20170 20170 D zygisk-core64: Unregistered plt_hook for symbol "strdup" in library "libandroid_runtime.so"[0m
+[34m08-30 07:54:49.009 20170 20170 D zygisk-core64: Unregistered plt_hook for symbol "_ZNK18FileDescriptorInfo14ReopenOrDetach" in library "libandroid_runtime.so"[0m
+[34m08-30 07:54:49.009 20170 20170 D zygisk-core64: Unregistered plt_hook for symbol "pthread_attr_setstacksize" in library "libart.so"[0m
+[34m08-30 07:54:49.009 20170 20170 D zygisk-core64: unmap libzygisk.so loaded at 0x100000000 with size 208896[0m
+[34m08-30 07:54:49.012 20170 20170 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok[0m
+--------- beginning of system
+[32m08-30 07:54:49.016 20170 20170 I ActivityThread: Current dynamic renderEngine type=0[0m
+[34m08-30 07:54:49.024 20170 20179 D MiuiDownscaleImpl: set override inverted scale : 1.0[0m
+[32m08-30 07:54:49.026 20170 20170 I RENDER_TURBO: onActivityThreadCreate not in white list, pkg=app.aira.viscount, type=somalia[0m
+[34m08-30 07:54:49.030 20170 20179 D AppScoutStateMachine: 20170-ScoutStateMachinecreated[0m
+[34m08-30 07:54:49.032 20170 20170 D ActivityThread: setEmbeddedParam packageName=app.aira.viscount processName=app.aira.viscount isEmbedded=false isIsolated=false[0m
+[34m08-30 07:54:49.033 20170 20170 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar[0m
+[34m08-30 07:54:49.037 20170 20170 D nativeloader: Configuring clns-10 for other apk /data/app/~~X9V_5SMdrdXOC5nVcDFktQ==/app.aira.viscount-AMplxqQIKkQirYpMS5VlbQ==/base.apk. target_sdk_version=28, uses_libraries=, library_path=/data/app/~~X9V_5SMdrdXOC5nVcDFktQ==/app.aira.viscount-AMplxqQIKkQirYpMS5VlbQ==/lib/arm64:/data/app/~~X9V_5SMdrdXOC5nVcDFktQ==/app.aira.viscount-AMplxqQIKkQirYpMS5VlbQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/app.aira.viscount[0m
+[34m08-30 07:54:49.037 20170 20170 D nativeloader: Extending system_exposed_libraries: libmisys_jni.xiaomi.so:libpag.hyperos.so:libffavc.hyperos.so:libautoui_image.xiaomi.so[0m
+[32m08-30 07:54:49.041 20170 20170 I p.aira.viscount: AssetManager2(0x7c35264778) locale list changing from [] to [en-GB][0m
+[31m08-30 07:54:49.042 20170 20170 E MiuiPreloadClassImpl: invoke error.[0m
+[34m08-30 07:54:49.042 20170 20170 D MiuiMonitorThread: Shared singleton Thread for stability monitor start[0m
+[34m08-30 07:54:49.044 20170 20170 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled[0m
+[34m08-30 07:54:49.044 20170 20170 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled[0m
+[34m08-30 07:54:49.044 20170 20170 D HWUI    : [HWUI] Flag ddre enabled[0m
+[39m08-30 07:54:49.044 20170 20170 V GraphicsEnvironment: Currently set values for:[0m
+[39m08-30 07:54:49.044 20170 20170 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[][0m
+[39m08-30 07:54:49.044 20170 20170 V GraphicsEnvironment:   angle_gl_driver_selection_values=[][0m
+[39m08-30 07:54:49.044 20170 20170 V GraphicsEnvironment: app.aira.viscount is not listed in per-application setting[0m
+[39m08-30 07:54:49.044 20170 20170 V GraphicsEnvironment: ANGLE allowlist from config: [0m
+[39m08-30 07:54:49.044 20170 20170 V GraphicsEnvironment: app.aira.viscount is not listed in ANGLE allowlist or settings, returning default[0m
+[39m08-30 07:54:49.045 20170 20170 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.[0m
+[32m08-30 07:54:49.050 20170 20181 I ActivityThread: TrafficStats init done[0m
+[34m08-30 07:54:49.050 20170 20170 D SimpleCrashFix: Installing essential crash fix...[0m
+[34m08-30 07:54:49.050 20170 20170 D SimpleCrashFix: Global exception handler installed successfully[0m
+[34m08-30 07:54:49.050 20170 20170 D ContextWrapperHook: Installing ContextWrapper hook...[0m
+[34m08-30 07:54:49.050 20170 20170 D ContextWrapperHook: ContextWrapper.getResources() method hooked successfully[0m
+[34m08-30 07:54:49.050 20170 20170 D ContextWrapperHook: ContextWrapper hook installed successfully[0m
+[34m08-30 07:54:49.050 20170 20170 D SimpleCrashFix: Context wrapper hook installed[0m
+[34m08-30 07:54:49.050 20170 20170 D SimpleCrashFix: Essential crash fix installed successfully[0m
+[34m08-30 07:54:49.051 20170 20170 D BlackBoxCore: Simple crash fix installed at class loading time[0m
+[34m08-30 07:54:49.051 20170 20170 D BlackBoxCore: Stack trace filter installed at class loading time[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: Initializing social media app crash prevention...[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: WebView constructor hook prepared[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: WebView crash prevention installed[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: AttributionSource crash prevention installed[0m
+[33m08-30 07:54:49.051 20170 20170 W SocialMediaCrashPrevention: Host context is null, attempting to recover[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: Successfully recovered context[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: Context crash prevention installed[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: Permission crash prevention installed[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: Media crash prevention installed[0m
+[34m08-30 07:54:49.051 20170 20170 D SocialMediaCrashPrevention: Social media app crash prevention initialized successfully[0m
+[34m08-30 07:54:49.051 20170 20170 D BlackBoxCore: Social media app crash prevention initialized at class loading time[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: Initializing DEX crash prevention...[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: Installing proactive DEX corruption prevention[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: Installing DEX file validation[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: DEX file validation hooks prepared[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: Installing ClassLoader monitoring[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: Monitoring ClassLoader: dalvik.system.PathClassLoader[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: Installing APK integrity checks[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: Periodic APK integrity checks prepared[0m
+[34m08-30 07:54:49.051 20170 20170 D DexCrashPrevention: DEX crash prevention initialized successfully[0m
+[34m08-30 07:54:49.051 20170 20170 D BlackBoxCore: DEX crash prevention initialized at class loading time[0m
+[32m08-30 07:54:49.051 20170 20181 I ForceDarkHelperStubImpl: initialize for app.aira.viscount , ForceDarkAppConfig: null[0m
+[34m08-30 07:54:49.051 20170 20170 D NativeCrashPrevention: Initializing native crash prevention...[0m
+[34m08-30 07:54:49.051 20170 20170 D NativeCrashPrevention: Signal handlers prepared (requires native implementation)[0m
+[34m08-30 07:54:49.052 20170 20170 D NativeCrashPrevention: Installing native library monitoring[0m
+[34m08-30 07:54:49.052 20170 20170 D NativeCrashPrevention: Native library monitoring prepared[0m
+[34m08-30 07:54:49.052 20170 20170 D NativeCrashPrevention: Installing memory protection[0m
+[34m08-30 07:54:49.052 20170 20170 D NativeCrashPrevention: Memory monitoring setup - Max: 268435456, Total: 268435456, Free: 265255104[0m
+[34m08-30 07:54:49.052 20170 20170 D NativeCrashPrevention: Installing thread protection[0m
+[34m08-30 07:54:49.052 20170 20170 D NativeCrashPrevention: Thread monitoring setup - Active threads: 14[0m
+[34m08-30 07:54:49.052 20170 20170 D NativeCrashPrevention: Native crash prevention initialized successfully[0m
+[34m08-30 07:54:49.052 20170 20170 D BlackBoxCore: Native crash prevention initialized at class loading time[0m
+[34m08-30 07:54:49.052 20170 20170 D CrashMonitor: Initializing comprehensive crash monitoring system...[0m
+[34m08-30 07:54:49.052 20170 20170 D CrashMonitor: Registered 5 recovery strategies[0m
+[34m08-30 07:54:49.052 20170 20170 D CrashMonitor: System error handler prepared[0m
+[34m08-30 07:54:49.052 20170 20170 D CrashMonitor: Global crash handlers installed[0m
+[34m08-30 07:54:49.052 20170 20170 D CrashMonitor: Crash monitoring started[0m
+[34m08-30 07:54:49.052 20170 20170 D CrashMonitor: Crash monitoring system initialized successfully[0m
+[34m08-30 07:54:49.052 20170 20170 D BlackBoxCore: Comprehensive crash monitoring initialized at class loading time[0m
+[34m08-30 07:54:49.053 20170 20181 D nativeloader: Load libforcedarkimpl.so using system ns (caller=/system_ext/framework/miui-framework.jar): ok[0m
+[34m08-30 07:54:49.053 20170 20181 D HWUI    : JNI_OnLoad success[0m
+[32m08-30 07:54:49.054 20170 20181 I MiuiForceDarkConfig: setConfig density:1.600000, mainRule:0, secondaryRule:0, tertiaryRule:0[0m
+[31m08-30 07:54:49.059 20170 20181 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.[0m
+[34m08-30 07:54:49.062 20170 20170 D VirtualSpoof: Spoof installed successfully[0m
+[34m08-30 07:54:49.062 20170 20170 D VirtualSpoof: VirtualSpoof: __system_property_get hook loaded[0m
+[34m08-30 07:54:49.062 20170 20170 D AntiDetection: Installing anti-detection hooks...[0m
+[34m08-30 07:54:49.062 20170 20170 D AntiDetection: File system hooks installed[0m
+[34m08-30 07:54:49.062 20170 20170 D AntiDetection: Anti-detection hooks installation complete[0m
+[34m08-30 07:54:49.063 20170 20170 D nativeloader: Load /data/app/~~X9V_5SMdrdXOC5nVcDFktQ==/app.aira.viscount-AMplxqQIKkQirYpMS5VlbQ==/lib/arm64/libblackbox.so using class loader ns clns-10 (caller=/data/app/~~X9V_5SMdrdXOC5nVcDFktQ==/app.aira.viscount-AMplxqQIKkQirYpMS5VlbQ==/base.apk): ok[0m
+[34m08-30 07:54:49.063 20170 20170 D NativeCore: set disableHiddenApi[0m
+[34m08-30 07:54:49.064 20170 20170 D NativeCore: found: 7bfe97d000-7bfeb32000 r--p 00000000 fe:3a 55                             /apex/com.android.art/lib64/libart.so[0m
+[34m08-30 07:54:49.064 20170 20170 D NativeCore: update path: /apex/com.android.art/lib64/libart.so[0m
+[34m08-30 07:54:49.064 20170 20170 D NativeCore: get module base /apex/com.android.art/lib64/libart.so: 7bfe97d000[0m
+[32m08-30 07:54:49.064 20170 20181 I ActivityThread: Miui Feature Init done[0m
+[31m08-30 07:54:49.077 20170 20170 E NativeCore: HiddenAPI: Didn't find setHiddenApiExemptions in any form[0m
+[34m08-30 07:54:49.077 20170 20170 D NativeCore: set disableHiddenApi Fail!!![0m
+[34m08-30 07:54:49.077 20170 20170 D NativeCore: set disableResourceLoading[0m
+[34m08-30 07:54:49.077 20170 20170 D NativeCore: ResourceLoading: Could not find ApkAssets.nativeLoad symbol[0m
+[34m08-30 07:54:49.077 20170 20170 D NativeCore: ResourceLoading: Found open function at 0x7ec6b1bf50[0m
+[34m08-30 07:54:49.077 20170 20170 D NativeCore: ResourceLoading: Native resource loading hooks initialized (without system properties)[0m
+[33m08-30 07:54:49.077 20170 20170 W BlackBoxCore: Could not access ResourcesManager overlay field: No field mDisableOverlayLoading in class Landroid/app/ResourcesManager; (declaration of 'android.app.ResourcesManager' appears in /system/framework/framework.jar)[0m
+[33m08-30 07:54:49.078 20170 20170 W BlackBoxCore: Could not access WindowManager leak field: No field mIgnoreWindowLeaks in class Landroid/view/WindowManager; (declaration of 'android.view.WindowManager' appears in /system/framework/framework.jar!classes4.dex)[0m
+[34m08-30 07:54:49.078 20170 20170 D SimpleCrashFix: Simple crash fix already installed[0m
+[34m08-30 07:54:49.078 20170 20170 D BlackBoxCore: System hooks installed successfully[0m
+[34m08-30 07:54:49.113 20170 20170 D BlackBoxCore: VPN network mode disabled, using normal network[0m
+[34m08-30 07:54:49.114 20170 20170 D ResMonitorStub: The current process type is: third_party_app, process name is: app.aira.viscount[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ╔══════════════════════════════════════════════════════════════╗[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║                    DEVICE INFORMATION                        ║[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ╠══════════════════════════════════════════════════════════════╣[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Android Version: 16[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ SDK Level: 36[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Build ID: BP2A.250605.031.A3[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Build Display: BP2A.250605.031.A3[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Security Patch: 2026-06-01[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ╠══════════════════════════════════════════════════════════════╣[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Manufacturer: Xiaomi[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Brand: Redmi[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Model: 2602BRNA4I[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Device: somalia[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Product: somalia_in2[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Board: somalia[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Hardware: somalia[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ╠══════════════════════════════════════════════════════════════╣[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Supported ABIs: arm64-v8a[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ 64-bit ABIs: arm64-v8a[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ╠══════════════════════════════════════════════════════════════╣[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Fingerprint: Redmi/somalia_in2/somalia:16/BP2A.250605.031.A3/OS3.0.11.0.WBWINXM:user/release-keys[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Type: user[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Tags: release-keys[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ╠══════════════════════════════════════════════════════════════╣[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Max Heap: 256 MB[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Total Heap: 256 MB[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Free Heap: 252 MB[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Used Heap: 4 MB[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ╠══════════════════════════════════════════════════════════════╣[0m
+[32m08-30 07:54:49.115 20170 20189 I BlackBoxCore: ║ Package: app.aira.viscount[0m
+[32m08-30 07:54:49.119 20170 20189 I BlackBoxCore: ║ App Version: 1.0.0[0m
+[32m08-30 07:54:49.120 20170 20189 I BlackBoxCore: ║ Version Code: 1[0m
+[32m08-30 07:54:49.120 20170 20189 I BlackBoxCore: ╠══════════════════════════════════════════════════════════════╣[0m
+[32m08-30 07:54:49.120 20170 20189 I BlackBoxCore: ║ Timestamp: 2026-08-30 07:54:49 +0530[0m
+[32m08-30 07:54:49.120 20170 20189 I BlackBoxCore: ╚══════════════════════════════════════════════════════════════╝[0m
+[34m08-30 07:54:49.144 20170 20170 D SimpleCrashFix: Simple crash fix already installed[0m
+[34m08-30 07:54:49.144 20170 20170 D BlackBoxCore: System hooks installed successfully[0m
+[31m08-30 07:54:49.145 20170 20189 E BlackBoxCore: Failed to save logcat: Failed to build unique file: /storage/emulated/0/Download/logs/app.aira.viscount_logcat.txt owner_package_name=app.aira.viscount _display_name=app.aira.viscount_logcat.txt mime_type=text/plain _data=/storage/emulated/0/Download/logs/app.aira.viscount_logcat.txt is_download=1 relative_path=Download/logs/[0m
+[34m08-30 07:54:49.146 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.146 20170 20170 D BlackBoxCore: Ensuring proper initialization order...[0m
+[34m08-30 07:54:49.146 20170 20170 D NativeCore: NativeCore init.[0m
+[34m08-30 07:54:49.146 20170 20170 D BlackBoxCore: NativeCore initialized successfully[0m
+[34m08-30 07:54:49.147 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.148 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.148 20170 20170 D BlackBoxCore: getService: activity_manager, android.os.BinderProxy@e110c31[0m
+[34m08-30 07:54:49.149 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.150 20170 20170 D BlackBoxCore: getService: package_manager, android.os.BinderProxy@3319097[0m
+[34m08-30 07:54:49.150 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.151 20170 20170 D BlackBoxCore: getService: storage_manager, android.os.BinderProxy@1f2c284[0m
+[34m08-30 07:54:49.151 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.151 20170 20170 D BlackBoxCore: getService: user_manager, android.os.BinderProxy@1b93a6d[0m
+[34m08-30 07:54:49.152 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.152 20170 20170 D BlackBoxCore: getService: job_manager, android.os.BinderProxy@8f946a2[0m
+[34m08-30 07:54:49.153 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.153 20170 20170 D BlackBoxCore: getService: account_manager, android.os.BinderProxy@8f49f33[0m
+[34m08-30 07:54:49.154 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.154 20170 20170 D BlackBoxCore: getService: location_manager, android.os.BinderProxy@d1b82f0[0m
+[34m08-30 07:54:49.155 20170 20170 D BlackBoxCore: Black process is running - SystemCallProvider accessible[0m
+[34m08-30 07:54:49.155 20170 20170 D BlackBoxCore: getService: notification_manager, android.os.BinderProxy@c3c1069[0m
+[34m08-30 07:54:49.155 20170 20170 D BlackBoxCore: Services initialized successfully[0m
+[34m08-30 07:54:49.155 20170 20170 D BlackBoxCore: ServiceManager initialized successfully[0m
+[34m08-30 07:54:49.156 20170 20170 D BActivityThread: Found ActivityThread instrumentation, ensuring it's our AppInstrumentation[0m
+[33m08-30 07:54:49.157 20170 20170 W BActivityThread: ActivityThread instrumentation is not our AppInstrumentation, attempting to replace[0m
+[34m08-30 07:54:49.157 20170 20170 D BActivityThread: Successfully replaced ActivityThread instrumentation with AppInstrumentation[0m
+[34m08-30 07:54:49.157 20170 20170 D BlackBoxCore: BActivityThread hooks initialized successfully[0m
+[34m08-30 07:54:49.157 20170 20170 D BlackBoxCore: Proper initialization order ensured[0m
+[34m08-30 07:54:49.157 20170 20170 D TransactionThrottler: Reset transaction throttler[0m
+[34m08-30 07:54:49.157 20170 20170 D BlackManager: Transaction throttler reset[0m
+[34m08-30 07:54:49.157 20170 20170 D BlackBoxCore: BlackBox initialization completed in 13ms[0m
+[32m08-30 07:54:49.155 20170 20170 I p.aira.viscount: type=1400 audit(0.0:21901): avc:  denied  { open } for  path="/dev/__properties__/u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=513 scontext=u:r:untrusted_app_27:s0:c163,c257,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=1 app=app.aira.viscount[0m
+[32m08-30 07:54:49.155 20170 20170 I p.aira.viscount: type=1400 audit(0.0:21902): avc:  denied  { getattr } for  path="/dev/__properties__/u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=513 scontext=u:r:untrusted_app_27:s0:c163,c257,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=1 app=app.aira.viscount[0m
+[34m08-30 07:54:49.160 20170 20170 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled[0m
+[34m08-30 07:54:49.160 20170 20170 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled[0m
+[32m08-30 07:54:49.155 20170 20170 I p.aira.viscount: type=1400 audit(0.0:21903): avc:  denied  { map } for  path="/dev/__properties__/u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=513 scontext=u:r:untrusted_app_27:s0:c163,c257,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=1 app=app.aira.viscount[0m
+[34m08-30 07:54:49.160 20170 20170 D HWUI    : [HWUI] Flag ddre enabled[0m
+[34m08-30 07:54:49.160 20170 20170 D p.aira.viscount: blurUtils, initBackgroundBlurMinInterval processName(app.aira.viscount), inWhiteLists(0)[0m
+[32m08-30 07:54:49.160 20170 20181 I ActivityThread: HardwareRenderer preload  done[0m
+[32m08-30 07:54:49.162 20170 20194 I DisplayManager: Choreographer implicitly registered for the refresh rate.[0m
+[32m08-30 07:54:49.163 20170 20170 I p.aira.viscount: AssetManager2(0x7c35259eb8) locale list changing from [] to [en-GB][0m
+[34m08-30 07:54:49.166 20170 20170 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found[0m
+[32m08-30 07:54:49.166 20170 20170 I p.aira.viscount: AssetManager2(0x7c3525e698) locale list changing from [] to [en-GB][0m
+[34m08-30 07:54:49.178 20170 20194 D libMiVK : MiVkSettings::InitDataInfo()[0m
+[34m08-30 07:54:49.178 20170 20194 D vulkan  : searching for layers in '/data/app/~~X9V_5SMdrdXOC5nVcDFktQ==/app.aira.viscount-AMplxqQIKkQirYpMS5VlbQ==/lib/arm64'[0m
+[34m08-30 07:54:49.179 20170 20194 D vulkan  : searching for layers in '/data/app/~~X9V_5SMdrdXOC5nVcDFktQ==/app.aira.viscount-AMplxqQIKkQirYpMS5VlbQ==/base.apk!/lib/arm64-v8a'[0m
+[34m08-30 07:54:49.180 20170 20170 D AppInstrumentation: callActivityOnCreate: app.aira.viscount.MainActivity[0m
+[32m08-30 07:54:49.189 20170 20170 I IconCustomizer: load icon config path M 0 42.7 C 0 27.7 0 20.3 2.9 14.6 C 5.5 9.5 9.5 5.5 14.6 2.9 C 20.3 0 27.7 0 42.7 0 L 57.3 0 C 72.3 0 79.7 0 85.4 2.9 C 90.5 5.5 94.5 9.5 97.1 14.6 C 100 20.3 100 27.7 100 42.7 V 57.3 C 100 72.3 100 79.7 97.1 85.4 C 94.5 90.5 90.5 94.5 85.4 97.1 C 79.7 100 72.3 100 57.3 100 H 42.7 C 27.7 100 20.3 100 14.6 97.1 C 9.5 94.5 5.5 90.5 2.9 85.4 C 0 79.7 0 72.3 0 57.3 L 0 42.7 Z, valid rect RectF(0.0, 0.0, 100.0, 100.0), isFullMask true[0m
+[33m08-30 07:54:49.189 20170 20170 W IconCustomizer: getCustomizedIconW 107[0m
+[34m08-30 07:54:49.192 20170 20170 D HWUI    : ImageDecoder_nDecodeBitmap: width = 77, height = 77, encodedFormat = 4[0m
+[33m08-30 07:54:49.193 20170 20170 W HWUI    : Image decoding logging dropped![0m
+[34m08-30 07:54:49.194 20170 20170 D IconCustomizer: findBetterDrawable, enable AI Icon=false, resId: 2131558400, appicon: 2131558400, is same: true[0m
+[34m08-30 07:54:49.194 20170 20170 D HWUI    : ImageDecoder_nDecodeBitmap: width = 96, height = 96, encodedFormat = 4[0m
+[33m08-30 07:54:49.195 20170 20170 W HWUI    : Image decoding logging dropped![0m
+[32m08-30 07:54:49.195 20170 20170 I IconCustomizer: find better bitmap : 96px, for app.aira.viscountat density :320dpi, the device is : 256dpi[0m
+[34m08-30 07:54:49.195 20170 20170 D IconCustomizer: Content Ratio = 1.1145834[0m
+[34m08-30 07:54:49.195 20170 20170 D IconCustomizer: drawableToBitmap: sourceWidth=96, sourceHeight=96, ratio=1.1145834[0m
+[34m08-30 07:54:49.199 20170 20170 D IconCustomizer: Generate customized icon for app.aira.viscount.png, true[0m
+[32m08-30 07:54:49.199 20170 20170 I IconCustomizer: composeIconWithTrans FullMask: for app.aira.viscount.png[0m
+[32m08-30 07:54:49.217 20170 20194 I libEGL  : shader cache num entries: 30[0m
+[34m08-30 07:54:49.218 20170 20194 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled[0m
+[34m08-30 07:54:49.218 20170 20194 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled[0m
+[34m08-30 07:54:49.218 20170 20194 D HWUI    : [HWUI] Flag ddre enabled[0m
+[34m08-30 07:54:49.218 20170 20194 D SKIA    : [Skia] Flag vulkan_enhance_pipeline_cache enabled[0m
+[34m08-30 07:54:49.218 20170 20194 D SKIA    : [Skia] EnhanceVkPipelineCache is true[0m
+[34m08-30 07:54:49.218 20170 20170 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET[0m
+[34m08-30 07:54:49.221 20170 20170 D DecorView: updateFreeformOutlineFromActivity, inFreeform=false,inFreeformWindowMode=false[0m
+[34m08-30 07:54:49.227 20170 20170 D CompatChangeReporter: Compat change id reported: 37756858; UID 10419; state: ENABLED[0m
+[34m08-30 07:54:49.229 20170 20170 D AudioSystem: onNewServiceWithAdapter: media.audio_flinger service obtained 0x7de52aa4b0[0m
+[34m08-30 07:54:49.230 20170 20170 D AudioSystem: getService: checking for service media.audio_flinger: 0x7d352cc950[0m
+[34m08-30 07:54:49.250 20170 20170 D ScrollerOptimizationManager: registerConfigChangedListener[0m
+[34m08-30 07:54:49.253 20170 20170 D SplineOverScroller: dynamic params is false[0m
+[32m08-30 07:54:49.247 20170 20170 I p.aira.viscount: type=1400 audit(0.0:21904): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=518 scontext=u:r:untrusted_app_27:s0:c163,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=1 app=app.aira.viscount[0m
+[34m08-30 07:54:49.254 20170 20170 D BlackManager: Creating service for: top.niunaijun.blackbox.core.system.pm.IBPackageManagerService$Stub[0m
+[34m08-30 07:54:49.255 20170 20170 D BlackManager: Successfully created service: package_manager[0m
+[32m08-30 07:54:49.267 20170 20170 I p.aira.viscount: AssetManager2(0x7c35272878) locale list changing from [] to [en-GB][0m
+[34m08-30 07:54:49.269 20170 20170 D HWUI    : ImageDecoder_nDecodeBitmap: width = 173, height = 173, encodedFormat = 4[0m
+[33m08-30 07:54:49.271 20170 20170 W HWUI    : Image decoding logging dropped![0m
+[34m08-30 07:54:49.271 20170 20170 D HWUI    : ImageDecoder_nDecodeBitmap: width = 173, height = 173, encodedFormat = 4[0m
+[33m08-30 07:54:49.273 20170 20170 W HWUI    : Image decoding logging dropped![0m
+[32m08-30 07:54:49.276 20170 20170 I DeviceLevelUtils: platform：ums9632[0m
+[32m08-30 07:54:49.276 20170 20170 I MiSpeedRecord: Connecting to PerfShielder service.[0m
+[32m08-30 07:54:49.277 20170 20170 I IconCustomizer: com.notdoppler.deadzed.png adaptiveIcon2Drawable size 115[0m
+[32m08-30 07:54:49.291 20170 20170 I p.aira.viscount: AssetManager2(0x7c35274498) locale list changing from [] to [en-GB][0m
+[32m08-30 07:54:49.310 20170 20170 I p.aira.viscount: AssetManager2(0x7c35273818) locale list changing from [] to [en-GB][0m
+[32m08-30 07:54:49.328 20170 20170 I p.aira.viscount: AssetManager2(0x7c35272238) locale list changing from [] to [en-GB][0m
+[32m08-30 07:54:49.341 20170 20170 I incfs   : Initial API level of the device: 36[0m
+[32m08-30 07:54:49.341 20170 20170 I incfs   : ro.incremental.enable: module:/vendor/lib/modules/incrementalfs.ko[0m
+[32m08-30 07:54:49.341 20170 20170 I incfs   : isFsAvailable: true[0m
+[32m08-30 07:54:49.341 20170 20170 I incfs   : IncFs_Features: v2[0m
+[32m08-30 07:54:49.342 20170 20170 I incfs-mounts: [incfs] Loaded incremental-fs mount info: 3 instances, 6 mount points[0m
+[32m08-30 07:54:49.349 20170 20170 I p.aira.viscount: AssetManager2(0x7c35270f78) locale list changing from [] to [en-GB][0m
+[34m08-30 07:54:49.352 20170 20170 D HWUI    : ImageDecoder_nDecodeBitmap: width = 173, height = 173, encodedFormat = 4[0m
+[33m08-30 07:54:49.354 20170 20170 W HWUI    : Image decoding logging dropped![0m
+[34m08-30 07:54:49.354 20170 20170 D HWUI    : ImageDecoder_nDecodeBitmap: width = 173, height = 173, encodedFormat = 4[0m
+[33m08-30 07:54:49.356 20170 20170 W HWUI    : Image decoding logging dropped![0m
+[32m08-30 07:54:49.356 20170 20170 I IconCustomizer: com.kiloo.subwaysurf.png adaptiveIcon2Drawable size 115[0m
+[34m08-30 07:54:49.360 20170 20170 D Activity: Activity = ActivityInfo{82e3dcd app.aira.viscount.MainActivity}, Resume onConfigurationChanged = {1.0 405mcc865mnc [en_GB] ldltr sw450dp w450dp h754dp 256dpi nrml long port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 59 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}[0m
+[34m08-30 07:54:49.365 20170 20170 D nativeloader: Load libunipnp_jni.so using system ns (caller=/system_ext/framework/unipnp-framework.jar): ok[0m
+[34m08-30 07:54:49.374 20170 20170 D FramePredict: FramePredict init: false[0m
+[34m08-30 07:54:49.374 20170 20170 D FramePredict: init success[0m
+[31m08-30 07:54:49.375 20170 20214 E FramePredict: registerContentObserver fail[0m
+[34m08-30 07:54:49.376 20170 20170 D p.aira.viscount: MiuiProcessManagerServiceStub setSchedFifo[0m
+[32m08-30 07:54:49.376 20170 20170 I MiuiProcessManagerImpl: setSchedFifo pid:20170, mode:3[0m
+[33m08-30 07:54:49.377 20170 20170 W HWUI    : Unknown dataspace 0[0m
+[34m08-30 07:54:49.378 20170 20194 D HWUI    : TAG_DDRE, CanvasContext::setDdreActivities: [0m
+[34m08-30 07:54:49.378 20170 20194 D HWUI    : TAG_DDRE, CanvasContext::setDdreActivities: [0m
+[32m08-30 07:54:49.379 20170 20170 I ForceDarkHelperStubImpl: setViewRootImplForceDark: false for app.aira.viscount.MainActivity@bff916b, reason: AppDarkModeEnable[0m
+[34m08-30 07:54:49.379 20170 20170 D FirstFrameSpeedUp: bls: [com.xcj.hm.kangfuyixue][0m
+[32m08-30 07:54:49.379 20170 20170 I ViewRootImpl: app.aira.viscount/app.aira.viscount.MainActivity use first frame acceleration[0m
+[32m08-30 07:54:49.385 20170 20170 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.[0m
+[32m08-30 07:54:49.387 20170 20170 I ComputilityLevel: getComputilityLevel(): 1[0m
+[34m08-30 07:54:49.402 20170 20170 D VRI[MainActivity]: vri.reportNextDraw 0 Rect(0, 0 - 720, 1280) android.view.ViewRootImpl.performTraversals:5559 android.view.ViewRootImpl.doTraversal:4115 android.view.ViewRootImpl$TraversalRunnable.run:12486 android.view.Choreographer$CallbackRecord.run:2062 android.view.Choreographer$CallbackRecord.run:2071 [0m
+[34m08-30 07:54:49.402 20170 20170 D VRI[MainActivity]: vri.Setup new sync=wmsSync-VRI[MainActivity]#0[0m
+[34m08-30 07:54:49.402 20170 20217 D mali_gralloc: register: id=3a7000076b7, handle=0x7d2527f590, importpid=20170[0m
+[34m08-30 07:54:49.402 20170 20217 D VirtualSpoof: [spoof] ro.build.type = user[0m
+[34m08-30 07:54:49.404 20170 20217 D mali_gralloc: register: id=3a7000076b8, handle=0x7d252b6f70, importpid=20170[0m
+[34m08-30 07:54:49.405 20170 20217 D mali_gralloc: register: id=3a7000076b9, handle=0x7d252b7990, importpid=20170[0m
+[34m08-30 07:54:49.407 20170 20217 D mali_gralloc: register: id=3a7000076ba, handle=0x7d252b8050, importpid=20170[0m
+[34m08-30 07:54:49.409 20170 20217 D mali_gralloc: register: id=3a7000076bb, handle=0x7d252b7e10, importpid=20170[0m
+[34m08-30 07:54:49.411 20170 20217 D mali_gralloc: register: id=3a7000076bc, handle=0x7d252b8710, importpid=20170[0m
+[34m08-30 07:54:49.412 20170 20217 D mali_gralloc: register: id=3a7000076bd, handle=0x7d252b5a10, importpid=20170[0m
+[32m08-30 07:54:49.441 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 4.00 ms.[0m
+[32m08-30 07:54:49.441 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.12 ms.[0m
+[32m08-30 07:54:49.441 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.10 ms.[0m
+[32m08-30 07:54:49.442 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.14 ms.[0m
+[32m08-30 07:54:49.442 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.14 ms.[0m
+[32m08-30 07:54:49.442 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.11 ms.[0m
+[32m08-30 07:54:49.443 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.13 ms.[0m
+[32m08-30 07:54:49.443 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.12 ms.[0m
+[34m08-30 07:54:49.448 20170 20194 D VirtualSpoof: [spoof] ro.product.device = oriole[0m
+[34m08-30 07:54:49.449 20170 20170 D VRI[MainActivity]: vri.reportDrawFinished 0 0 Rect(0, 0 - 720, 1280)[0m
+[32m08-30 07:54:49.450 20170 20170 I Choreographer: first vsync insert message into MessageQueue Head[0m
+[34m08-30 07:54:49.454 20170 20194 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled[0m
+[34m08-30 07:54:49.454 20170 20194 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled[0m
+[34m08-30 07:54:49.454 20170 20194 D HWUI    : [HWUI] Flag ddre enabled[0m
+[32m08-30 07:54:49.482 20170 20170 I HandWritingStubImpl: refreshLastKeyboardType: 1[0m
+[32m08-30 07:54:49.482 20170 20170 I HandWritingStubImpl: getCurrentKeyboardType: 1[0m
+[34m08-30 07:54:49.486 20170 20170 D InsetsController: hide(ime(), fromIme=false)[0m
+[32m08-30 07:54:49.486 20170 20170 I ImeTracker: app.aira.viscount:bab556a9: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN[0m
+[32m08-30 07:54:49.492 20170 20170 I HandWritingStubImpl: getCurrentKeyboardType: 1[0m
+[33m08-30 07:54:49.757 20170 20224 W p.aira.viscount: sendGameRenderCheck remote service is not exist.[0m
+[34m08-30 07:54:50.306 20170 20194 D BufferQueueProducer: [VRI[MainActivity]#0(BLAST Consumer)0](id:4eca00000000,api:1,p:20170,c:20170) disconnect: api 1 (caller=20170)[0m
+[34m08-30 07:54:50.306 20170 20194 D mali_gralloc: unregister: id=3a7000076b8, handle=0x7d252b6f70, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:50.306 20170 20194 D mali_gralloc: unregister: id=3a7000076b9, handle=0x7d252b7990, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:50.307 20170 20194 D mali_gralloc: unregister: id=3a7000076ba, handle=0x7d252b8050, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:50.307 20170 20194 D mali_gralloc: unregister: id=3a7000076bb, handle=0x7d252b7e10, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:50.307 20170 20194 D mali_gralloc: unregister: id=3a7000076bc, handle=0x7d252b8710, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:50.307 20170 20194 D mali_gralloc: unregister: id=3a7000076bd, handle=0x7d252b5a10, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:50.307 20170 20194 D BufferQueueConsumer: [VRI[MainActivity]#0(BLAST Consumer)0](id:4eca00000000,api:0,p:-1,c:20170) disconnect: caller 20170[0m
+[34m08-30 07:54:50.308 20170 20194 D mali_gralloc: unregister: id=3a7000076b7, handle=0x7d2527f590, base=0x0, importpid=20170, clone_count=0[0m
+[33m08-30 07:54:50.308 20170 20194 W p.aira.viscount: Binder 0x7c052864a0 destroyed after setInheritRt before being parceled.[0m
+[32m08-30 07:54:54.141 20170 20170 I ForceDarkHelperStubImpl: setViewRootImplForceDark: false for app.aira.viscount.MainActivity@bff916b, reason: AppDarkModeEnable[0m
+[34m08-30 07:54:54.192 20170 20170 D Activity: Activity = ActivityInfo{82e3dcd app.aira.viscount.MainActivity}, Resume onConfigurationChanged = {1.0 405mcc865mnc [en_GB] ldltr sw450dp w450dp h754dp 256dpi nrml long port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 59 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}[0m
+[34m08-30 07:54:54.216 20170 20170 D VRI[MainActivity]: vri.reportNextDraw 0 Rect(0, 0 - 720, 1280) android.view.ViewRootImpl.performTraversals:5559 android.view.ViewRootImpl.doTraversal:4115 android.view.ViewRootImpl$TraversalRunnable.run:12486 android.view.Choreographer$CallbackRecord.run:2062 android.view.Choreographer$CallbackRecord.run:2071 [0m
+[34m08-30 07:54:54.217 20170 20170 D VRI[MainActivity]: vri.Setup new sync=wmsSync-VRI[MainActivity]#2[0m
+[34m08-30 07:54:54.221 20170 20259 D mali_gralloc: register: id=3a7000076df, handle=0x7d252bf0d0, importpid=20170[0m
+[32m08-30 07:54:54.215 20170 20170 I allocateBuffers: type=1400 audit(0.0:21926): avc:  denied  { ioctl } for  path="/dev/systemheap" dev="tmpfs" ino=1372 ioctlcmd=0x6500 scontext=u:r:untrusted_app_27:s0:c163,c257,c512,c768 tcontext=u:object_r:systemheap_device:s0 tclass=chr_file permissive=1 app=app.aira.viscount[0m
+[34m08-30 07:54:54.227 20170 20259 D mali_gralloc: register: id=3a7000076e0, handle=0x7d252bcbb0, importpid=20170[0m
+[34m08-30 07:54:54.230 20170 20259 D mali_gralloc: register: id=3a7000076e1, handle=0x7d252be230, importpid=20170[0m
+[34m08-30 07:54:54.233 20170 20259 D mali_gralloc: register: id=3a7000076e2, handle=0x7d252be590, importpid=20170[0m
+[34m08-30 07:54:54.237 20170 20259 D mali_gralloc: register: id=3a7000076e3, handle=0x7d252bd6f0, importpid=20170[0m
+[34m08-30 07:54:54.240 20170 20259 D mali_gralloc: register: id=3a7000076e4, handle=0x7d252b69d0, importpid=20170[0m
+[34m08-30 07:54:54.242 20170 20259 D mali_gralloc: register: id=3a7000076e5, handle=0x7d252bf310, importpid=20170[0m
+[31m08-30 07:54:54.246 20170 20194 E p.aira.viscount: DynamicFPS DF open fail: No such file or directory[0m
+[34m08-30 07:54:54.247 20170 20170 D VRI[MainActivity]: vri.reportDrawFinished 0 0 Rect(0, 0 - 720, 1280)[0m
+[32m08-30 07:54:54.273 20170 20170 I HandWritingStubImpl: refreshLastKeyboardType: 1[0m
+[32m08-30 07:54:54.274 20170 20170 I HandWritingStubImpl: getCurrentKeyboardType: 1[0m
+[34m08-30 07:54:54.276 20170 20170 D InsetsController: hide(ime(), fromIme=false)[0m
+[32m08-30 07:54:54.276 20170 20170 I ImeTracker: app.aira.viscount:92f523cf: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN[0m
+[32m08-30 07:54:54.310 20170 20170 I ImeTracker: system_server:49db4d8a: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED[0m
+[33m08-30 07:54:54.343 20170 20170 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ImeBackAnimationController@85a6138[0m
+[34m08-30 07:54:54.427 20170 20260 D ProfileInstaller: Skipping profile installation for app.aira.viscount[0m
+[31m08-30 07:54:55.806 20170 20194 E p.aira.viscount: FrameInsert open fail: No such file or directory[0m
+[32m08-30 07:54:57.135 20170 20170 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'app.aira.viscount/app.aira.viscount.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=22140265, downTime=22140265, phoneEventTime=07:54:57.124 } moveCount:0[0m
+[33m08-30 07:54:57.141 20170 20170 W MirrorManager: this model don't Support[0m
+[34m08-30 07:54:57.141 20170 20170 D VRI[MainActivity]: getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null[0m
+[32m08-30 07:54:57.224 20170 20170 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'app.aira.viscount/app.aira.viscount.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=22140364, downTime=22140265, phoneEventTime=07:54:57.223 } moveCount:0[0m
+[32m08-30 07:54:57.234 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.23 ms.[0m
+[33m08-30 07:54:57.239 20170 20267 W BlackBoxCore: All files access not granted for launching: com.kiloo.subwaysurf[0m
+[33m08-30 07:54:57.239 20170 20267 W BlackBoxCore: Launching without all files access - some file operations may fail[0m
+[34m08-30 07:54:57.240 20170 20267 D TransactionThrottler: Reset transaction throttler[0m
+[34m08-30 07:54:57.241 20170 20267 D TransactionThrottler: Reset transaction throttler[0m
+[34m08-30 07:54:57.268 20170 20267 D SplashScreen: LauncherActivity.launch() called for package: com.kiloo.subwaysurf[0m
+[32m08-30 07:54:57.279 20170 20181 I ActivityThread: HardwareRenderer preload  done[0m
+[34m08-30 07:54:57.283 20170 20170 D AppInstrumentation: callActivityOnCreate: top.niunaijun.blackbox.app.LauncherActivity[0m
+[34m08-30 07:54:57.287 20170 20170 D SplashScreen: LauncherActivity.onCreate() for package: com.kiloo.subwaysurf, userId: 0[0m
+[34m08-30 07:54:57.288 20170 20170 D SplashScreen: Successfully retrieved package info for com.kiloo.subwaysurf[0m
+[34m08-30 07:54:57.291 20170 20170 D DecorView: updateFreeformOutlineFromActivity, inFreeform=false,inFreeformWindowMode=false[0m
+[34m08-30 07:54:57.293 20170 20270 D SplashScreen: Starting app launch in background thread[0m
+[34m08-30 07:54:57.293 20170 20170 D Activity: Activity = ActivityInfo{350d17b top.niunaijun.blackbox.app.LauncherActivity}, Resume onConfigurationChanged = {1.0 405mcc865mnc [en_GB] ldltr sw450dp w450dp h754dp 256dpi nrml long port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 59 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}[0m
+[34m08-30 07:54:57.296 20170 20194 D HWUI    : TAG_DDRE, CanvasContext::setDdreActivities: [0m
+[34m08-30 07:54:57.296 20170 20194 D HWUI    : TAG_DDRE, CanvasContext::setDdreActivities: [0m
+[32m08-30 07:54:57.296 20170 20170 I ForceDarkHelperStubImpl: setViewRootImplForceDark: false for top.niunaijun.blackbox.app.LauncherActivity@95edb98, reason: AppDarkModeEnable[0m
+[32m08-30 07:54:57.296 20170 20170 I ViewRootImpl: app.aira.viscount/top.niunaijun.blackbox.app.LauncherActivity use first frame acceleration[0m
+[32m08-30 07:54:57.298 20170 20170 I Choreographer: first vsync insert message into MessageQueue Head[0m
+[32m08-30 07:54:57.299 20170 20170 I ComputilityLevel: getComputilityLevel(): 1[0m
+[34m08-30 07:54:57.309 20170 20170 D VRI[LauncherActivity]: vri.reportNextDraw 0 Rect(0, 0 - 720, 1280) android.view.ViewRootImpl.performTraversals:5559 android.view.ViewRootImpl.doTraversal:4115 android.view.ViewRootImpl$TraversalRunnable.run:12486 android.view.Choreographer$CallbackRecord.run:2062 android.view.Choreographer$CallbackRecord.run:2071 [0m
+[34m08-30 07:54:57.310 20170 20170 D VRI[LauncherActivity]: vri.Setup new sync=wmsSync-VRI[LauncherActivity]#4[0m
+[34m08-30 07:54:57.311 20170 20271 D mali_gralloc: register: id=3a7000076e6, handle=0x7d252b5a10, importpid=20170[0m
+[34m08-30 07:54:57.312 20170 20271 D mali_gralloc: register: id=3a7000076e7, handle=0x7d252bf1f0, importpid=20170[0m
+[34m08-30 07:54:57.313 20170 20271 D mali_gralloc: register: id=3a7000076e8, handle=0x7d252bcdf0, importpid=20170[0m
+[34m08-30 07:54:57.315 20170 20170 D VRI[LauncherActivity]: vri.reportDrawFinished 0 0 Rect(0, 0 - 720, 1280)[0m
+[34m08-30 07:54:57.316 20170 20271 D mali_gralloc: register: id=3a7000076e9, handle=0x7d252bccd0, importpid=20170[0m
+[34m08-30 07:54:57.318 20170 20194 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled[0m
+[34m08-30 07:54:57.318 20170 20194 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled[0m
+[34m08-30 07:54:57.318 20170 20194 D HWUI    : [HWUI] Flag ddre enabled[0m
+[34m08-30 07:54:57.319 20170 20271 D mali_gralloc: register: id=3a7000076ea, handle=0x7d252bea10, importpid=20170[0m
+[32m08-30 07:54:57.320 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.17 ms.[0m
+[34m08-30 07:54:57.322 20170 20271 D mali_gralloc: register: id=3a7000076eb, handle=0x7d252bdff0, importpid=20170[0m
+[34m08-30 07:54:57.324 20170 20271 D mali_gralloc: register: id=3a7000076ec, handle=0x7d252b58f0, importpid=20170[0m
+[32m08-30 07:54:57.354 20170 20170 I HandWritingStubImpl: refreshLastKeyboardType: 1[0m
+[32m08-30 07:54:57.354 20170 20170 I HandWritingStubImpl: getCurrentKeyboardType: 1[0m
+[34m08-30 07:54:57.361 20170 20170 D InsetsController: hide(ime(), fromIme=false)[0m
+[32m08-30 07:54:57.362 20170 20170 I ImeTracker: app.aira.viscount:92ec6911: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN[0m
+[34m08-30 07:54:57.394 20170 20270 D BlackManager: Creating service for: top.niunaijun.blackbox.core.system.am.IBActivityManagerService$Stub[0m
+[34m08-30 07:54:57.394 20170 20270 D BlackManager: Successfully created service: activity_manager[0m
+[32m08-30 07:54:57.415 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.16 ms.[0m
+[31m08-30 07:54:57.582 20170 20194 E LB      : fail to open file: No such file or directory[0m
+[31m08-30 07:54:57.582 20170 20194 E LB      : fail to open node: No such file or directory[0m
+[31m08-30 07:54:57.582 20170 20194 E LB      : fail to open node: No such file or directory[0m
+[33m08-30 07:54:57.691 20170 20270 W BpBinder: PerfMonitor binderTransact: time=295ms interface=top.niunaijun.blackbox.core.system.am.IBActivityManagerService code=3[0m
+[34m08-30 07:54:57.692 20170 20270 D SplashScreen: App launch initiated successfully[0m
+[32m08-30 07:54:57.807 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.19 ms.[0m
+[34m08-30 07:54:57.853 20170 20170 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false[0m
+[34m08-30 07:54:57.858 20170 20194 D BufferQueueProducer: [VRI[MainActivity]#1(BLAST Consumer)1](id:4eca00000001,api:1,p:20170,c:20170) disconnect: api 1 (caller=20170)[0m
+[34m08-30 07:54:57.858 20170 20194 D mali_gralloc: unregister: id=3a7000076e0, handle=0x7d252bcbb0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:57.858 20170 20194 D mali_gralloc: unregister: id=3a7000076e1, handle=0x7d252be230, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:57.858 20170 20194 D mali_gralloc: unregister: id=3a7000076e2, handle=0x7d252be590, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:57.858 20170 20194 D mali_gralloc: unregister: id=3a7000076e4, handle=0x7d252b69d0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:57.858 20170 20194 D HWUI    : endAllActiveAnimators on 0x7cb52898d0 (RippleDrawable) with handle 0x7de52ba350[0m
+[33m08-30 07:54:57.861 20170 20170 W p.aira.viscount: Binder 0x7c0528adc0 destroyed after setInheritRt before being parceled.[0m
+[34m08-30 07:54:57.865 20170 20178 D mali_gralloc: unregister: id=3a7000076df, handle=0x7d252bf0d0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:57.871 20170 20178 D mali_gralloc: unregister: id=3a7000076e3, handle=0x7d252bd6f0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:57.871 20170 20178 D BufferQueueConsumer: [VRI[MainActivity]#1(BLAST Consumer)1](id:4eca00000001,api:0,p:-1,c:20170) disconnect: caller 0[0m
+[34m08-30 07:54:57.871 20170 20178 D mali_gralloc: unregister: id=3a7000076e5, handle=0x7d252bf310, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:59.588 20170 20170 D VRI[LauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false[0m
+[34m08-30 07:54:59.600 20170 20194 D BufferQueueProducer: [VRI[LauncherActivity]#2(BLAST Consumer)2](id:4eca00000002,api:1,p:20170,c:20170) disconnect: api 1 (caller=20170)[0m
+[34m08-30 07:54:59.600 20170 20194 D mali_gralloc: unregister: id=3a7000076e6, handle=0x7d252b5a10, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:59.600 20170 20194 D mali_gralloc: unregister: id=3a7000076e7, handle=0x7d252bf1f0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:59.600 20170 20194 D mali_gralloc: unregister: id=3a7000076e8, handle=0x7d252bcdf0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:59.600 20170 20194 D mali_gralloc: unregister: id=3a7000076e9, handle=0x7d252bccd0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:59.600 20170 20194 D mali_gralloc: unregister: id=3a7000076eb, handle=0x7d252bdff0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:54:59.600 20170 20194 D mali_gralloc: unregister: id=3a7000076ec, handle=0x7d252b58f0, base=0x0, importpid=20170, clone_count=0[0m
+[33m08-30 07:54:59.607 20170 20170 W p.aira.viscount: Binder 0x7c0528d2e0 destroyed after setInheritRt before being parceled.[0m
+[34m08-30 07:54:59.607 20170 20170 D BufferQueueConsumer: [VRI[LauncherActivity]#2(BLAST Consumer)2](id:4eca00000002,api:0,p:-1,c:20170) disconnect: caller 20170[0m
+[34m08-30 07:54:59.607 20170 20170 D mali_gralloc: unregister: id=3a7000076ea, handle=0x7d252bea10, base=0x0, importpid=20170, clone_count=0[0m
+[33m08-30 07:54:59.639 20170 20174 W p.aira.viscount: Cleared Reference was only reachable from finalizer (only reported once)[0m
+[34m08-30 07:55:19.054 20170 20170 D CrashMonitor: Performing periodic health check...[0m
+[34m08-30 07:55:19.055 20170 20170 D CrashMonitor: Health check completed - Memory: 1.5%, Threads: 25[0m
+[32m08-30 07:55:29.418 20170 20170 I ForceDarkHelperStubImpl: setViewRootImplForceDark: false for top.niunaijun.blackbox.app.LauncherActivity@95edb98, reason: AppDarkModeEnable[0m
+[34m08-30 07:55:29.478 20170 20170 D Activity: Activity = ActivityInfo{350d17b top.niunaijun.blackbox.app.LauncherActivity}, Resume onConfigurationChanged = {1.0 405mcc865mnc [en_GB] ldltr sw450dp w450dp h754dp 256dpi nrml long port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 59 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}[0m
+[34m08-30 07:55:29.534 20170 20170 D VRI[LauncherActivity]: vri.reportNextDraw 0 Rect(0, 0 - 720, 1280) android.view.ViewRootImpl.performTraversals:5559 android.view.ViewRootImpl.doTraversal:4115 android.view.ViewRootImpl$TraversalRunnable.run:12486 android.view.Choreographer$CallbackRecord.run:2062 android.view.Choreographer$CallbackRecord.run:2071 [0m
+[34m08-30 07:55:29.534 20170 20170 D VRI[LauncherActivity]: vri.Setup new sync=wmsSync-VRI[LauncherActivity]#6[0m
+[34m08-30 07:55:29.550 20170 21355 D mali_gralloc: register: id=3a70000772d, handle=0x7d252a4d30, importpid=20170[0m
+[34m08-30 07:55:29.555 20170 21355 D mali_gralloc: register: id=3a70000772e, handle=0x7d252a89f0, importpid=20170[0m
+[34m08-30 07:55:29.558 20170 21355 D mali_gralloc: register: id=3a70000772f, handle=0x7d252b96d0, importpid=20170[0m
+[34m08-30 07:55:29.560 20170 20170 D VRI[LauncherActivity]: vri.reportDrawFinished 0 0 Rect(0, 0 - 720, 1280)[0m
+[34m08-30 07:55:29.565 20170 21355 D mali_gralloc: register: id=3a700007730, handle=0x7d252bb650, importpid=20170[0m
+[34m08-30 07:55:29.568 20170 21355 D mali_gralloc: register: id=3a700007731, handle=0x7d252b8050, importpid=20170[0m
+[34m08-30 07:55:29.572 20170 21355 D mali_gralloc: register: id=3a700007732, handle=0x7d252be8f0, importpid=20170[0m
+[34m08-30 07:55:29.576 20170 21355 D mali_gralloc: register: id=3a700007733, handle=0x7d252aeab0, importpid=20170[0m
+[32m08-30 07:55:29.597 20170 20170 I ForceDarkHelperStubImpl: setViewRootImplForceDark: false for app.aira.viscount.MainActivity@bff916b, reason: AppDarkModeEnable[0m
+[34m08-30 07:55:29.599 20170 20170 D Activity: Activity = ActivityInfo{82e3dcd app.aira.viscount.MainActivity}, Resume onConfigurationChanged = {1.0 405mcc865mnc [en_GB] ldltr sw450dp w450dp h754dp 256dpi nrml long port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 59 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}[0m
+[34m08-30 07:55:29.626 20170 20170 D VRI[MainActivity]: vri.reportNextDraw 0 Rect(0, 0 - 720, 1280) android.view.ViewRootImpl.performTraversals:5559 android.view.ViewRootImpl.doTraversal:4115 android.view.ViewRootImpl$TraversalRunnable.run:12486 android.view.Choreographer$CallbackRecord.run:2062 android.view.Choreographer$CallbackRecord.run:2071 [0m
+[34m08-30 07:55:29.626 20170 20170 D VRI[MainActivity]: vri.Setup new sync=wmsSync-VRI[MainActivity]#8[0m
+[34m08-30 07:55:29.634 20170 21359 D mali_gralloc: register: id=3a700007734, handle=0x7d252bcf10, importpid=20170[0m
+[34m08-30 07:55:29.640 20170 21359 D mali_gralloc: register: id=3a700007735, handle=0x7d252b72d0, importpid=20170[0m
+[34m08-30 07:55:29.652 20170 21359 D mali_gralloc: register: id=3a700007736, handle=0x7d252b1210, importpid=20170[0m
+[34m08-30 07:55:29.654 20170 21359 D mali_gralloc: register: id=3a700007737, handle=0x7d252adf70, importpid=20170[0m
+[34m08-30 07:55:29.657 20170 21359 D mali_gralloc: register: id=3a700007738, handle=0x7d252af950, importpid=20170[0m
+[34m08-30 07:55:29.661 20170 21359 D mali_gralloc: register: id=3a700007739, handle=0x7d252afa70, importpid=20170[0m
+[34m08-30 07:55:29.666 20170 21359 D mali_gralloc: register: id=3a70000773a, handle=0x7d252acd70, importpid=20170[0m
+[34m08-30 07:55:29.677 20170 20170 D VRI[MainActivity]: vri.reportDrawFinished 0 0 Rect(0, 0 - 720, 1280)[0m
+[32m08-30 07:55:29.713 20170 20170 I HandWritingStubImpl: refreshLastKeyboardType: 1[0m
+[32m08-30 07:55:29.713 20170 20170 I HandWritingStubImpl: getCurrentKeyboardType: 1[0m
+[34m08-30 07:55:29.731 20170 20170 D InsetsController: hide(ime(), fromIme=false)[0m
+[32m08-30 07:55:29.731 20170 20170 I ImeTracker: app.aira.viscount:5bbae20e: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN[0m
+[34m08-30 07:55:29.906 20170 20170 D VRI[LauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false[0m
+[34m08-30 07:55:29.913 20170 20194 D BufferQueueProducer: [VRI[LauncherActivity]#3(BLAST Consumer)3](id:4eca00000003,api:1,p:20170,c:20170) disconnect: api 1 (caller=20170)[0m
+[34m08-30 07:55:29.913 20170 20194 D mali_gralloc: unregister: id=3a700007733, handle=0x7d252aeab0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:55:29.914 20170 20194 D mali_gralloc: unregister: id=3a700007732, handle=0x7d252be8f0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:55:29.914 20170 20194 D mali_gralloc: unregister: id=3a700007731, handle=0x7d252b8050, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:55:29.915 20170 20194 D mali_gralloc: unregister: id=3a700007730, handle=0x7d252bb650, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:55:29.916 20170 20194 D mali_gralloc: unregister: id=3a70000772f, handle=0x7d252b96d0, base=0x0, importpid=20170, clone_count=0[0m
+[34m08-30 07:55:29.917 20170 20194 D mali_gralloc: unregister: id=3a70000772e, handle=0x7d252a89f0, base=0x0, importpid=20170, clone_count=0[0m
+[33m08-30 07:55:29.954 20170 20170 W p.aira.viscount: Binder 0x7c0528b5a0 destroyed after setInheritRt before being parceled.[0m
+[34m08-30 07:55:29.954 20170 20170 D BufferQueueConsumer: [VRI[LauncherActivity]#3(BLAST Consumer)3](id:4eca00000003,api:0,p:-1,c:20170) disconnect: caller 20170[0m
+[34m08-30 07:55:29.954 20170 20170 D mali_gralloc: unregister: id=3a70000772d, handle=0x7d252a4d30, base=0x0, importpid=20170, clone_count=0[0m
+[33m08-30 07:55:29.957 20170 20170 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Activity$$ExternalSyntheticLambda0@9910a57[0m
+[34m08-30 07:55:29.957 20170 20170 D DecorViewImmersiveImpl: onDetachedFromWindow[0m
+[34m08-30 07:55:29.958 20170 20170 D ViewRootImpl: Skipping stats log for color mode[0m
+[32m08-30 07:55:31.473 20170 20170 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'app.aira.viscount/app.aira.viscount.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=22174604, downTime=22174604, phoneEventTime=07:55:31.463 } moveCount:0[0m
+[34m08-30 07:55:31.473 20170 20170 D VRI[MainActivity]: getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null[0m
+[32m08-30 07:55:31.547 20170 20170 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'app.aira.viscount/app.aira.viscount.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=22174687, downTime=22174604, phoneEventTime=07:55:31.546 } moveCount:0[0m
+[33m08-30 07:55:31.558 20170 21367 W BlackBoxCore: All files access not granted for launching: com.google.android.gms[0m
+[33m08-30 07:55:31.558 20170 21367 W BlackBoxCore: Launching without all files access - some file operations may fail[0m
+[34m08-30 07:55:31.559 20170 21367 D TransactionThrottler: Reset transaction throttler[0m
+[34m08-30 07:55:31.560 20170 21367 D TransactionThrottler: Reset transaction throttler[0m
+[34m08-30 07:55:31.578 20170 21367 D SplashScreen: LauncherActivity.launch() called for package: com.google.android.gms[0m
+[32m08-30 07:55:31.593 20170 20181 I ActivityThread: HardwareRenderer preload  done[0m
+[34m08-30 07:55:31.597 20170 20170 D AppInstrumentation: callActivityOnCreate: top.niunaijun.blackbox.app.LauncherActivity[0m
+[34m08-30 07:55:31.602 20170 20170 D SplashScreen: LauncherActivity.onCreate() for package: com.google.android.gms, userId: 0[0m
+[34m08-30 07:55:31.603 20170 20170 D SplashScreen: Successfully retrieved package info for com.google.android.gms[0m
+[34m08-30 07:55:31.606 20170 20170 D DecorView: updateFreeformOutlineFromActivity, inFreeform=false,inFreeformWindowMode=false[0m
+[34m08-30 07:55:31.614 20170 21372 D SplashScreen: Starting app launch in background thread[0m
+[34m08-30 07:55:31.614 20170 20170 D Activity: Activity = ActivityInfo{79e1c7e top.niunaijun.blackbox.app.LauncherActivity}, Resume onConfigurationChanged = {1.0 405mcc865mnc [en_GB] ldltr sw450dp w450dp h754dp 256dpi nrml long port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 59 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}[0m
+[34m08-30 07:55:31.618 20170 20194 D HWUI    : TAG_DDRE, CanvasContext::setDdreActivities: [0m
+[34m08-30 07:55:31.618 20170 20194 D HWUI    : TAG_DDRE, CanvasContext::setDdreActivities: [0m
+[32m08-30 07:55:31.618 20170 20170 I ForceDarkHelperStubImpl: setViewRootImplForceDark: false for top.niunaijun.blackbox.app.LauncherActivity@274b5df, reason: AppDarkModeEnable[0m
+[32m08-30 07:55:31.619 20170 20170 I ViewRootImpl: app.aira.viscount/top.niunaijun.blackbox.app.LauncherActivity use first frame acceleration[0m
+[32m08-30 07:55:31.623 20170 20170 I Choreographer: first vsync insert message into MessageQueue Head[0m
+[32m08-30 07:55:31.624 20170 20170 I ComputilityLevel: getComputilityLevel(): 1[0m
+[34m08-30 07:55:31.636 20170 20170 D VRI[LauncherActivity]: vri.reportNextDraw 0 Rect(0, 0 - 720, 1280) android.view.ViewRootImpl.performTraversals:5559 android.view.ViewRootImpl.doTraversal:4115 android.view.ViewRootImpl$TraversalRunnable.run:12486 android.view.Choreographer$CallbackRecord.run:2062 android.view.Choreographer$CallbackRecord.run:2071 [0m
+[34m08-30 07:55:31.636 20170 20170 D VRI[LauncherActivity]: vri.Setup new sync=wmsSync-VRI[LauncherActivity]#10[0m
+[34m08-30 07:55:31.638 20170 21373 D mali_gralloc: register: id=3a70000773c, handle=0x7d252ac7d0, importpid=20170[0m
+[34m08-30 07:55:31.639 20170 21373 D mali_gralloc: register: id=3a70000773d, handle=0x7d252aeab0, importpid=20170[0m
+[34m08-30 07:55:31.640 20170 21373 D mali_gralloc: register: id=3a70000773e, handle=0x7d252a2ff0, importpid=20170[0m
+[34m08-30 07:55:31.641 20170 21373 D mali_gralloc: register: id=3a70000773f, handle=0x7d252a89f0, importpid=20170[0m
+[34m08-30 07:55:31.642 20170 21373 D mali_gralloc: register: id=3a700007740, handle=0x7d252b96d0, importpid=20170[0m
+[34m08-30 07:55:31.643 20170 20170 D VRI[LauncherActivity]: vri.reportDrawFinished 0 0 Rect(0, 0 - 720, 1280)[0m
+[34m08-30 07:55:31.645 20170 21373 D mali_gralloc: register: id=3a700007741, handle=0x7d252ad550, importpid=20170[0m
+[34m08-30 07:55:31.648 20170 21373 D mali_gralloc: register: id=3a700007742, handle=0x7d252aebd0, importpid=20170[0m
+[34m08-30 07:55:31.648 20170 20194 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled[0m
+[34m08-30 07:55:31.648 20170 20194 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled[0m
+[34m08-30 07:55:31.648 20170 20194 D HWUI    : [HWUI] Flag ddre enabled[0m
+[32m08-30 07:55:31.658 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.36 ms.[0m
+[32m08-30 07:55:31.659 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.16 ms.[0m
+[32m08-30 07:55:31.659 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.15 ms.[0m
+[32m08-30 07:55:31.675 20170 20170 I HandWritingStubImpl: refreshLastKeyboardType: 1[0m
+[32m08-30 07:55:31.676 20170 20170 I HandWritingStubImpl: getCurrentKeyboardType: 1[0m
+[34m08-30 07:55:31.684 20170 20170 D InsetsController: hide(ime(), fromIme=false)[0m
+[32m08-30 07:55:31.684 20170 20170 I ImeTracker: app.aira.viscount:878090f7: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN[0m
+[32m08-30 07:55:31.726 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.28 ms.[0m
+[32m08-30 07:55:31.726 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.15 ms.[0m
+[32m08-30 07:55:31.727 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.19 ms.[0m
+[34m08-30 07:55:31.752 20170 21372 D SplashScreen: App launch initiated successfully[0m
+[32m08-30 07:55:32.130 20170 20194 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.17 ms.[0m
+[34m08-30 07:55:32.170 20170 20170 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false[0m
+[34m08-30 07:55:32.172 20170 20194 D BufferQueueProducer: [VRI[MainActivity]#4(BLAST Consumer)4](id:4eca00000004,api:1,p:20170,c:20170) disconnect: api 1 (caller=20170)[0m
+[34m08-30 07:55:32.172 20170 20194 D mali_gralloc: unregister: id=3a700007734, handle=0x7d252bc
